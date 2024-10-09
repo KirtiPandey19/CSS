@@ -1,0 +1,125 @@
+Advanced CSS Questions
+What is the difference between inline and block elements?
+
+Inline elements do not start on a new line and only take up as much width as necessary. Examples include <span> and <a>. Block elements start on a new line and take up the full width. Examples include <div> and <p>.
+What are CSS media queries?
+
+Media queries are used to apply different CSS styles based on conditions like screen width, device orientation, or resolution. Example:
+css
+Copy code
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+What is a CSS grid layout?
+
+CSS Grid Layout is a two-dimensional layout system for the web, allowing developers to create complex layouts more easily. It uses rows and columns to define the structure.
+What is the flexbox layout in CSS?
+
+Flexbox is a one-dimensional layout model that allows elements to align and distribute space efficiently inside a container. Common properties include flex-direction, justify-content, and align-items.
+How do you create a responsive web design using CSS?
+
+By using flexible layouts, media queries, and flexible images. Media queries allow for specific CSS rules to apply based on device width.
+What are calc(), min(), max(), and clamp() functions in CSS?
+
+These functions allow you to perform mathematical calculations directly in CSS:
+calc(): Perform calculations (e.g., width: calc(100% - 20px)).
+min(): Returns the smallest value.
+max(): Returns the largest value.
+clamp(): Restricts a value between a defined range.
+How do you apply CSS transitions to animate an element?
+
+Use the transition property to define which CSS properties should animate when they change. Example:
+css
+Copy code
+div {
+  transition: background-color 0.5s ease;
+}
+What is the @keyframes rule in CSS?
+
+It defines the intermediate steps in an animation sequence. Example:
+css
+Copy code
+@keyframes myAnimation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+What is SASS and LESS?
+
+SASS and LESS are CSS preprocessors that add features like variables, nested rules, and functions to CSS, making it easier to write and manage styles.
+What is BEM in CSS?
+
+BEM (Block, Element, Modifier) is a naming convention for writing modular and reusable CSS. Example: block__element--modifier.
+Miscellaneous CSS Questions
+What is specificity in CSS?
+
+Specificity determines which CSS rule takes precedence when there are multiple rules for the same element. It is calculated based on the type of selectors used (inline styles, IDs, classes, elements).
+What is the !important rule in CSS?
+
+The !important rule overrides all other styling rules. It forces a style to be applied to an element, regardless of specificity.
+What is a CSS preprocessor?
+
+A CSS preprocessor is a scripting language that extends CSS with features like variables, nesting, and functions. Common preprocessors include SASS, LESS, and Stylus.
+What is the difference between nth-child() and nth-of-type()?
+
+nth-child() selects elements based on their position relative to their parent, while nth-of-type() selects elements based on their type and position relative to siblings of the same type.
+What is the transform property in CSS?
+
+The transform property allows you to scale, rotate, translate, or skew elements.
+What is CSS-in-JS?
+
+CSS-in-JS refers to a pattern where CSS is written within JavaScript. It allows for dynamic styling directly in JavaScript files. Popular libraries include Styled Components and Emotion.
+What is the float property used for?
+
+The float property is used to position an element to the left or right, allowing text and inline elements to wrap around it.
+What is the clear property?
+
+The clear property specifies whether an element should be moved below (cleared) floating elements that precede it. Common values are left, right, and both.
+What is the opacity property in CSS?
+
+The opacity property sets the transparency of an element. A value of 1 is fully opaque, and 0 is fully transparent.
+What is the cursor property in CSS?
+
+The cursor property specifies the type of cursor to be displayed when pointing over an element (e.g., pointer, move, text).
+Modern CSS Questions
+What is the purpose of the will-change property in CSS?
+
+It hints to the browser that an element will likely change, allowing the browser to optimize rendering for smoother animations.
+What are CSS variables (custom properties)?
+
+CSS variables allow you to store values that can be reused throughout the stylesheet. Example:
+css
+Copy code
+:root {
+  --main-color: #3498db;
+}
+div {
+  color: var(--main-color);
+}
+What is the difference between grid and flexbox?
+
+Grid is a two-dimensional layout system (rows and columns), while Flexbox is a one-dimensional system (either row or column).
+What is the filter property in CSS?
+
+The filter property applies graphical effects like blur, grayscale, or brightness to an element.
+What is the content property in CSS?
+
+It is used with pseudo-elements (::before and ::after) to insert generated content into a page.
+What is the box-shadow property in CSS?
+
+It is used to add shadow effects around an element.
+What is CSS Grid Layout?
+
+CSS Grid Layout is a system for creating complex, responsive layouts with rows and columns, allowing more control over grid placement and alignment.
+How do you create a fixed-width layout in CSS?
+
+By setting a specific width and centering it using margin: 0 auto.
+How do you create a sticky footer in CSS?
+
+By using position: fixed or position: sticky on the footer element with bottom-aligned properties.
+What are the different units of measurement in CSS?
+
+Common units include:
+Absolute units: px, pt, cm.
+Relative units: em, rem, %, vw, vh.
